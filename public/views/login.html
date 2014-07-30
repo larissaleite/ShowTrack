@@ -1,9 +1,31 @@
+<style type="text/css">
+
+.login-form {
+	width: 30%; 
+	margin:0 auto; 
+	text-align:center; 
+	margin-top:10%;
+	font-family: FontAwesome;
+}
+
+.form-control {
+	height: 45px;
+}
+
+.icon-user {
+	font-size: 15rem;
+}
+
+</style>
+
 <div class="container">
 
-	<div id="login">
-		<input type="text" placeholder="Username" />
-		<input type="pwd" placeholder="Password" />
-		<input type="submit" value="Submit" />
+	<div class="login-form">
+		<i class="icon-user icon-4x"></i>
+		<br/><br/>
+		<input ng-model="username" type="text" placeholder="&#xf007; Username" class="form-control" /><br>
+	    <input ng-model="password" type="password" placeholder="&#xf023; Password" class="form-control" /><br>
+	    <button class="btn btn-primary form-control" ng-click="login()">Sign up</button>
 	</div>
 
 </div>
